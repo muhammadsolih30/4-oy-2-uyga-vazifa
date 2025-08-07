@@ -1,0 +1,138 @@
+/* RANGLAR VA TAYYORLASH */
+:root {
+  --primary: #000;
+  --secondary: #fff;
+  --accent: #c0c0c0;
+  --bg: #f4f4f4;
+  --font: 'Segoe UI', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--primary);
+  background-color: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* HEADER */
+.main-header {
+  background: var(--secondary);
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav li a:hover {
+  color: #888;
+}
+
+/* HERO */
+.hero {
+  background: url('https://greats.gallery/upload/resize_cache/iblock/41e/730_547_2/sry1m4a5xx5tkkpy0t5bx7i4ejp9ci2b.jpg') no-repeat center center/cover;
+  height: 90vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: var(--primary);
+  color: var(--secondary);
+  padding: 10px 25px;
+  border-radius: 3px;
+}
+
+/* BO‘LIMLAR */
+.section {
+  padding: 60px 0;
+}
+
+.card {
+  background: var(--secondary);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* XIZMATLAR */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+/* ALOQA FORMASI */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form button {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* FOOTER */
+.main-footer {
+  background: var(--primary);
+  color: var(--secondary);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
